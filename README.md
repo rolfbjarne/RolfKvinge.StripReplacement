@@ -20,18 +20,18 @@ This is a NuGet that provides a strip tool with a fix for https://github.com/xam
 
 4. If support for Xcode 16.1 has not been released for the iOS workload (which has not happened at the time of this writing):
 
-	a. Replace the `strip` binary in Xcode with the one built here.
+	1. Replace the `strip` binary in Xcode with the one built here.
 
 		```shell
 		$ echo "Will overwrite this file: $(xcrun -f strip)"
 		$ cp external/cctools/build/Release/strip "$(xcrun -f strip)"
 		```
 
-	b. Now build your project.
+	2. Now build your project.
 
 5. If support for Xcode 16.1 has been released [^1], you can use the NuGet instead, by:
 
-	a. Add a `NuGet.config` to your project with a feed that points to the directory where the `nupkg` is located:
+	1. Add a `NuGet.config` to your project with a feed that points to the directory where the `nupkg` is located:
 
 		```xml
 		<?xml version="1.0" encoding="utf-8"?>
@@ -42,7 +42,7 @@ This is a NuGet that provides a strip tool with a fix for https://github.com/xam
 		</configuration>
 		```
 
-	b. Reference the NuGet in your csproj:
+	2. Reference the NuGet in your csproj:
 
 		```xml
 		<ItemGroup>
@@ -50,7 +50,7 @@ This is a NuGet that provides a strip tool with a fix for https://github.com/xam
 		</ItemGroup>
 		```
 
-	c. Now build your project.
+	3. Now build your project.
 
 I might at some point put the package on NuGet.org after support for Xcode 16.1 has been released.
 
