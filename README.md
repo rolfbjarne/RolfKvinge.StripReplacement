@@ -1,6 +1,8 @@
 # RolfKvinge.StripReplacement
 
-This is a NuGet that provides a strip tool with a fix for https://github.com/xamarin/xamarin-macios/issues/19157.
+This is a NuGet that provides a prebuilt strip tool with the fix for https://github.com/xamarin/xamarin-macios/issues/19157 (https://github.com/apple-oss-distributions/cctools/pull/2).
+
+Note: this is a personal project, not an official project from Microsoft.
 
 # To build
 
