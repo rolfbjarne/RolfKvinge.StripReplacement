@@ -2,7 +2,13 @@
 
 This is a NuGet that provides a prebuilt strip tool with the fix for https://github.com/xamarin/xamarin-macios/issues/19157 (https://github.com/apple-oss-distributions/cctools/pull/2).
 
-Note: this is a personal project, not an official project from Microsoft.
+> [!IMPORTANT]
+> If you're here, please take the time to file a feedback ticket with Apple to hopefully entice them to fix this, that way this workaround won't be necessary.
+> 
+> Feel free to reference the pull request with the fix: https://github.com/apple-oss-distributions/cctools/pull/2, and also the existing feedback ticket I raised ([FB13327641](https://github.com/rolfbjarne/apple-feedback/tree/main/FB13327641)).
+
+> [!NOTE]
+> This is a personal project, not an official project from Microsoft.
 
 # To build
 
